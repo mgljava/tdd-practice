@@ -12,41 +12,49 @@ public class NumberGameTest {
 
     // when
     String result = new NumberGame().calc(1);
+    String result2 = new NumberGame().calc(11);
 
     // then
     assertEquals("1", result);
+    assertEquals("11", result2);
   }
 
   @Test
-  public void should_get_fizz_when_number_is_divide_3_is_0() {
+  public void should_get_fizz_when_number_multiple_of_3() {
     // given
 
     // when
     final String result = new NumberGame().calc(3);
+    final String result2 = new NumberGame().calc(21);
 
     // then
     assertEquals("fizz", result);
+    assertEquals("fizz", result2);
   }
 
   @Test
-  public void should_get_buzz_when_number_is_divide_5_is_0() {
+  public void should_get_buzz_when_number_multiple_of_5() {
     // given
 
     // when
     final String result = new NumberGame().calc(10);
+    final String result2 = new NumberGame().calc(55);
 
     // then
     assertEquals("buzz", result);
+    assertEquals("buzz", result2);
   }
 
   @Test
-  public void should_get_fizzbuzz_when_number_is_divide_3_and_5_is_0() {
+  public void should_get_fizzbuzz_when_number_multiple_of_3_and_5() {
     // given
 
     // when
     final String result = new NumberGame().calc(45);
+    final String result2 = new NumberGame().calc(60);
 
     // then
     assertEquals("fizzbuzz", result);
+    assertEquals("fizzbuzz", result2);
   }
 }
